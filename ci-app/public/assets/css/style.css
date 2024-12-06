@@ -4,14 +4,6 @@ body {
     padding-top: 56px; /* Platz für Navbar */
 }
 
-.hidden {
-    display: none; /* Ausblenden */
-}
-
-.show {
-    display: block; /* Einblenden */
-}
-
 h1 {
     color: #1E5E96;
     font-family: 'Arial', sans-serif;
@@ -36,7 +28,7 @@ p {
     z-index: 1000;
     border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #CCE7FF !important; /* Hintergrundfarbe priorisieren */
+    background-color: #CCE7FF !important; 
 }
 
 .navbar-nav .nav-item {
@@ -44,36 +36,39 @@ p {
 }
 
 .nav-link {
-    color: #333;
-    font-weight: bold;
-    padding: 15px 20px;
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    font-weight: normal; 
+    padding: 10px 20px;
     display: flex;
-    align-items: center;
-    gap: 8px; /* Abstand zwischen Icon und Text */
+    align-items: center; 
+    gap: 5px; /* Abstand zwischen Icon und Text */
+    color: #333; 
 }
 
-.nav-link:hover {
-    color: #0056b3;
-    text-decoration: none;
-}
+
 
 .dropdown-menu {
     display: none; /* Submenu ausblenden */
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+    background-color: #f7f7f7;
     border-radius: 5px;
 }
 
 .dropdown-item {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    font-weight: normal; 
     color: black;
     padding: 10px 20px;
     display: block;
 }
 
 .dropdown-item:hover {
-    background-color: #c0c2c5;
+    color: #0056b3; /* Schriftfarbe wird beim Hover blau */
+    background-color: #CCE7FF;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -94,6 +89,6 @@ th {
 
 td {
     padding: 10px;
-    border: 1px solid #e0e0e0;
+
     background-color: white;
 }

@@ -6,9 +6,16 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-// Standard-Route (Startseite)
-$routes->get('/', 'Menu::showContent');
+//Startseite
+$routes->get('/', 'Menu::newContentUpload');
 
-// Definierte Routen für Menu
-$routes->get('menu/showContent', 'Menu::showContent');
-$routes->get('menu/showAllContent', 'Menu::showAllContent');
+//Routen für Menu
+$routes->get('menu/newContentUpload', 'Menu::newContentUpload');
+$routes->get('menu/allContent', 'Menu::allContent');
+$routes->get('menu/allSchedules', 'Menu::allSchedules');
+$routes->get('menu/devices', 'Menu::devices');
+$routes->get('menu/newPlaylist', 'Menu::newPlaylist');
+$routes->get('menu/newSchedule', 'Menu::newSchedule');
+$routes->get('menu/statistic', 'Menu::statistic');
+$routes->get('menu/users', 'Menu::users');
+$routes->get('menu/allPlaylists', 'Menu::allPlaylists');
