@@ -5,9 +5,10 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
 
-$routes->get('menu/showContent', 'MenuController::showContent');
-$routes->get('menu/showAllContent', 'MenuController::showAllContent');
+// Standard-Route (Startseite)
+$routes->get('/', 'Menu::showContent');
 
-
+// Definierte Routen für Menu
+$routes->get('menu/showContent', 'Menu::showContent');
+$routes->get('menu/showAllContent', 'Menu::showAllContent');
