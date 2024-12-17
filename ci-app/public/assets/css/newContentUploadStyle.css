@@ -1,0 +1,35 @@
+/*newContentUpload*/
+.bg-info {
+    background-color: white !important;
+}
+.text-primary {
+    color: #1E5E96 !important;
+}
+.border-primary {
+    border-color: lightgrey !important;
+}
+.btn-primary {
+    background-color: #5191C9;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #4178b3 !important;
+}
+
+#dropArea {
+    height: 200px;
+    color: #1E5E96;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+
+#dataInput img,
+#dataInput video {
+    max-width: 70px;
+    max-height: 70px;
+    border-radius: 5px;
+}
